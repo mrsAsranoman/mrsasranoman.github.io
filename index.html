@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asra Nausheen Noman — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <span class="nav-mark">AN<span class="dot">.</span></span>
+    <nav class="nav-links">
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="prompt-line"><span class="prompt-user">asra@portfolio</span><span class="prompt-sep">:~$</span> <span id="typed"></span><span class="cursor">▌</span></p>
+    <h1 class="hero-name">Asra Nausheen Noman</h1>
+    <p class="hero-role">Frontend Developer, in the making — building with HTML, CSS &amp; JavaScript.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <p class="section-label">what I work with</p>
+    <ul class="skill-row">
+      <li>[ HTML ]</li>
+      <li>[ CSS ]</li>
+      <li>[ JavaScript ]</li>
+      <li>[ C / C++ ]</li>
+      <li>[ Java ]</li>
+      <li>[ Databases ]</li>
+    </ul>
+  </section>
+
+  <!-- WORK / PROJECT LOG -->
+  <section id="work" class="log">
+    <p class="section-label">project log</p>
+
+    <article class="log-entry" data-index="001">
+      <div class="log-index">001</div>
+      <div class="log-body">
+        <h3>Task Board</h3>
+        <p>A to-do list that actually works — add tasks, mark them done, clear what's finished. State is kept live in the page, nothing gets lost mid-session.</p>
+        <div class="log-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <button class="log-toggle" data-target="demo-todo">open demo ↴</button>
+        <div class="log-demo" id="demo-todo">
+          <div class="todo-app">
+            <div class="todo-input-row">
+              <input type="text" id="todoInput" placeholder="Add a task…" />
+              <button id="todoAdd">Add</button>
+            </div>
+            <ul id="todoList"></ul>
+            <p class="todo-meta"><span id="todoCount">0</span> tasks left</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="log-entry" data-index="002">
+      <div class="log-index">002</div>
+      <div class="log-body">
+        <h3>Calc</h3>
+        <p>A small calculator built to understand event handling and operator logic properly, instead of copying one from a tutorial.</p>
+        <div class="log-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <button class="log-toggle" data-target="demo-calc">open demo ↴</button>
+        <div class="log-demo" id="demo-calc">
+          <div class="calc-app">
+            <input type="text" id="calcScreen" readonly value="0" />
+            <div class="calc-grid">
+              <button class="calc-op" data-val="C">C</button>
+              <button class="calc-op" data-val="(">(</button>
+              <button class="calc-op" data-val=")">)</button>
+              <button class="calc-op" data-val="/">÷</button>
+              <button data-val="7">7</button>
+              <button data-val="8">8</button>
+              <button data-val="9">9</button>
+              <button class="calc-op" data-val="*">×</button>
+              <button data-val="4">4</button>
+              <button data-val="5">5</button>
+              <button data-val="6">6</button>
+              <button class="calc-op" data-val="-">−</button>
+              <button data-val="1">1</button>
+              <button data-val="2">2</button>
+              <button data-val="3">3</button>
+              <button class="calc-op" data-val="+">+</button>
+              <button data-val="0">0</button>
+              <button data-val=".">.</button>
+              <button class="calc-back" data-val="back">⌫</button>
+              <button class="calc-eq" data-val="=">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="log-entry" data-index="003">
+      <div class="log-index">003</div>
+      <div class="log-body">
+        <h3>Landing Page Study</h3>
+        <p>A recreation of a product landing page section, focused on getting spacing, type hierarchy and responsive layout right.</p>
+        <div class="log-tags"><span>HTML</span><span>CSS</span></div>
+        <button class="log-toggle" data-target="demo-landing">open demo ↴</button>
+        <div class="log-demo" id="demo-landing">
+          <div class="mini-landing">
+            <div class="mini-nav">
+              <span>brandline</span>
+              <span class="mini-nav-links">features · pricing · contact</span>
+            </div>
+            <div class="mini-hero">
+              <h4>Plan less. Build more.</h4>
+              <p>A workspace that gets out of your way.</p>
+              <button>Start free</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <p class="section-label">about</p>
+    <p class="about-text">
+      I'm a Computer Science graduate (B.C.S.) based in Nashik, Maharashtra, currently building
+      my front-end skills project by project. I like taking things apart to see how they work,
+      then rebuilding them cleaner. Right now I'm looking for a junior developer role where I
+      can keep learning while contributing from day one.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="contact">
+    <p class="section-label">get in touch</p>
+    <a class="contact-email" href="mailto:mrsmhnoman@gmail.com">mrsmhnoman@gmail.com</a>
+    <div class="contact-links">
+      <a href="tel:+918956683125">+91 89566 83125</a>
+      <a href="#" id="linkedinLink">linkedin</a>
+      <a href="#" id="githubLink">github</a>
+    </div>
+    <p class="footer-note">Malegaon, Nashik, Maharashtra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
